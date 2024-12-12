@@ -1,2 +1,3 @@
-# Monitoring-script
-system monitoring script
+to run the script below is an example command
+
+python3 monitor_system.py --format "csv" --interval 1
