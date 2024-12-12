@@ -122,9 +122,8 @@ def generate_report(output_format, interval):
         with open(filename, "w", newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["Metric", "Details"])
-            writer.writerow(f"CPU Usage: {cpu_percentage}%\n")
-            writer.writerow(f"Memory Usage: {used_memory}\n")
-            writer.writerow(f"Disk Usage: {used_disk}\n")
+            for key, value in report.items():
+                writer.writerow([key, value])
 
     else:
         print("Unsupported format specified.")

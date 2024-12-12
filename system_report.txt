@@ -1,0 +1,4 @@
+System Report
+CPU Usage: 10.2%
+Memory Usage: 56.5
+Disk Usage: 13.429542541503906
