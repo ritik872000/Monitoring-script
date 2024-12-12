@@ -106,7 +106,7 @@ def generate_report(output_format, interval):
 
     #Generate report
     if output_format == "text":
-        filename = '/Users/ritikkesharwani/Downloads/report/system_report.txt'
+        filename = 'system_report.txt'
         with open(filename, "w") as file:
             file.write(f"System Report\n")
             file.write(f"CPU Usage: {cpu_percentage}%\n")
@@ -114,11 +114,11 @@ def generate_report(output_format, interval):
             file.write(f"Disk Usage: {used_disk}\n")
            
     elif output_format == "json":
-        filename = '/Users/ritikkesharwani/Downloads/report/system_report.json'
+        filename = 'system_report.json'
         with open(filename, "w") as file:
             json.dump(report, file, indent=4)
     elif output_format == "csv":
-        filename = '/Users/ritikkesharwani/Downloads/report/system_report.csv'
+        filename = 'system_report.csv'
         with open(filename, "w", newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["Metric", "Details"])
